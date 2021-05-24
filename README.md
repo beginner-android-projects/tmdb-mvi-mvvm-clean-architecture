@@ -27,13 +27,13 @@ This Application designed with single activity architecture principles with clea
 
 # Architecture
 
-1. Clean Architecture
+# Clean Architecture
 ![architecture](/images/clean.png)
 
-2. Layers Architecture
+# Layers Architecture
 ![architecture](/images/clean2.png)
 
-3. Data Layer: Repository
+# Data Layer: Repository
 ![datalayer](/images/clean3.png)
 
 # USAGE

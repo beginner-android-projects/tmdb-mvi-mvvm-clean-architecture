@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activity.main.MainFragment">
+
+    <LinearLayout
+     android:id="@+id/MainFragment_mainLayout"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:visibility="visible"
+     android:layout_height="match_parent">
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize">
+
+         <EditText
+             android:id="@+id/MainFragment_etSearch"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toStartOf="@id/MainFragment_btnFavs"
+             android:hint="@string/search"
+             android:paddingLeft="20dp"
+             android:textSize="14dp"
+             android:layout_margin="20dp"
+             android:background="@null"
+             ></EditText>
+         <TextView
+             android:id="@+id/MainFragment_btnFavs"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:background="@drawable/in_fav"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:layout_marginRight="20dp"></TextView>
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/MainFragment_rvBase"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:visibility="visible">
+     </androidx.recyclerview.widget.RecyclerView>
+ </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MainFragment_lottie"
+        android:layout_width="match_parent"
+        android:background="#2A2D2E"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:lottie_autoPlay="true"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true">
+
+        </com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+</LinearLayout>

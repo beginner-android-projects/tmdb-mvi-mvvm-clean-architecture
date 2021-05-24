@@ -24,9 +24,6 @@ This Application designed with single activity architecture principles with clea
 10. [Moshi](https://github.com/square/moshi)
 11. [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
 
-
-# Architecture
-
 # Clean Architecture
 ![architecture](/images/clean.png)
 
